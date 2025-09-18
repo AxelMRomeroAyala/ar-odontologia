@@ -45,7 +45,7 @@ header {
 }
 
 header:hover {
-  background: rgba(118, 157, 184, 1); /* Azul semi-transparente al hacer hover */
+  background: #A8C8E5; /* Azul semi-transparente al hacer hover */
 }
 
 .navbar {
@@ -91,7 +91,7 @@ header:hover {
 }
 
 .btn {
-  background: #769DB8;
+  background: #A8C8E5;
   color: white;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
@@ -133,7 +133,7 @@ section {
 }
 
 .contact button {
-  background: #769DB8;
+  background: #A8C8E5;
   color: white;
   padding: 0.75rem;
   border: none;
@@ -142,7 +142,7 @@ section {
 }
 
 footer {
-  background: #769DB8;
+  background: #A8C8E5;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -232,7 +232,7 @@ footer {
 
 .opinion-card h4 {
   font-weight: bold;
-  color: #769DB8;
+  color: #A8C8E5;
 }
 
 .opinion-card img {
@@ -263,7 +263,7 @@ footer {
 }
 
 .servicio {
-  background: #769DB8;
+  background: #A8C8E5;
   color: white;
   padding: 1.5rem;
   border-radius: 10px;
