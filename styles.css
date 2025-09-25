@@ -30,17 +30,20 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #333;
   line-height: 1.6;
+  padding-top: 80px; /* Ajusta según la altura real del header */
 }
 
 header {
   background: #6499C2;
   color: white;
   padding: 1rem 2rem;
-  position: fixed;
+  position: fixed; /* Cambiado a fixed para que siempre esté arriba */
   width: 100%;
   top: 0;
+  left: 0;
   z-index: 1000;
   transition: background 0.3s ease;
+  box-sizing: border-box;
 }
 
 header:hover {
@@ -76,7 +79,7 @@ header:hover {
 }
 
 .hero-content {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(15, 25, 32, 0.85); /* #0F1920 con opacidad */
   padding: 2rem;
   border-radius: 10px;
 }
@@ -99,6 +102,7 @@ header:hover {
 
 section {
   padding: 4rem 2rem;
+  scroll-margin-top: 70px; /* Ajusta según la altura del header */
 }
 
 .container {
@@ -196,8 +200,9 @@ footer {
 }
 
 .instagram .btn {
-  background: #E1306C;
+  background: #F38989;
   padding: 0.75rem 1.5rem;
+  color: white;
 }
 
 .opiniones {
@@ -291,5 +296,14 @@ footer {
 .servicio-descripcion {
   margin-top: 0.75rem;
   color: #fff;
+}
+
+.servicios h2,
+.about h2,
+.contact h2,
+.opiniones h2,
+.instagram h2 {
+  color: #152531;
+  scroll-margin-top: 90px; /* Prueba con 120px o ajusta según el alto real del header */
 }
 
