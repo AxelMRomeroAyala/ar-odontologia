@@ -7,6 +7,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show-on-scroll");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+      document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+        observer.observe(el);
+      });
+    });
+  </script>
 </head>
 <body>
   <header>
@@ -24,81 +41,81 @@
     </nav>
   </header>
 
-  <section id="inicio" class="hero">  
-    <div class="hero-content">
+  <section id="inicio" class="hero animate-on-scroll">
+    <div class="hero-content animate-on-scroll">
       <h1>AR Odontología Integral</h1>
       <p>Sonrisas saludables, atención de calidad</p>
       <a href="https://wa.me/5491123593702" class="btn" target="_blank" aria-label="Agendar consulta por WhatsApp">Agendar Consulta</a>
     </div>
   </section>
 
-  <section id="nosotros" class="about">
-    <div class="container">
+  <section id="nosotros" class="about animate-on-scroll">
+    <div class="container animate-on-scroll">
       <h2>Sobre Nosotros</h2>
-      <div class="about-content">
-        <img src="odontologo.jpg" alt="Odontólogo" class="about-img">
+      <div class="about-content animate-on-scroll">
+        <img src="odontologo.jpg" alt="Odontólogo" class="about-img" />
         <p>Somos una clínica dental con años de experiencia, comprometidos con tu bienestar y salud bucal. Brindamos un servicio personalizado y contamos con tecnología avanzada para ofrecerte el mejor tratamiento.</p>
       </div>
     </div>
   </section>
 
-<section id="servicios" class="servicios">
-  <div class="container">
-    <h2>Nuestros Servicios</h2>
-    <div class="servicios-grid">
-      <div class="servicio">
-        <span class="servicio-icon material-symbols-outlined" aria-hidden="true">medical_services</span>
-        <h3>Consultas y Tratamientos Generales</h3>
-        <p class="servicio-descripcion">Evaluamos tu salud bucal integralmente y diseñamos planes personalizados.</p>
-      </div>
-      <div class="servicio">
-        <span class="servicio-icon material-symbols-outlined" aria-hidden="true">auto_fix_high</span>
-        <h3>Restauraciones Estéticas</h3>
-        <p class="servicio-descripcion">Devolvemos la armonía a tu sonrisa con resinas y porcelana de alta estética.</p>
-      </div>
-      <div class="servicio">
-        <span class="servicio-icon material-symbols-outlined" aria-hidden="true">light_mode</span>
-        <h3>Blanqueamiento</h3>
-        <p class="servicio-descripcion">Tratamientos profesionales y/o ambulatorios que iluminan tu sonrisa de forma segura y controlada.</p>
-      </div>
-      <div class="servicio">
-        <span class="servicio-icon material-symbols-outlined" aria-hidden="true">health_and_safety</span>
-        <h3>Cirugías</h3>
-        <p class="servicio-descripcion">Procedimientos quirúrgicos con técnicas mínimamente invasivas y una recuperación confortable.</p>
-      </div>
-      <div class="servicio">
-        <span class="servicio-icon material-symbols-outlined" aria-hidden="true">dentistry</span>
-        <h3>Implantes</h3>
-        <p class="servicio-descripcion">Implantes de última generación que devuelven la funcion, la estética y la confianza al sonreir.</p>
+  <section id="servicios" class="servicios animate-on-scroll">
+    <div class="container animate-on-scroll">
+      <h2>Nuestros Servicios</h2>
+      <div class="servicios-grid animate-on-scroll">
+        <div class="servicio animate-on-scroll">
+          <span class="servicio-icon material-symbols-outlined" aria-hidden="true">medical_services</span>
+          <h3>Consultas y Tratamientos Generales</h3>
+          <p class="servicio-descripcion">Evaluamos tu salud bucal integralmente y diseñamos planes personalizados.</p>
+        </div>
+        <div class="servicio animate-on-scroll">
+          <span class="servicio-icon material-symbols-outlined" aria-hidden="true">auto_fix_high</span>
+          <h3>Restauraciones Estéticas</h3>
+          <p class="servicio-descripcion">Devolvemos la armonía a tu sonrisa con resinas y porcelana de alta estética.</p>
+        </div>
+        <div class="servicio animate-on-scroll">
+          <span class="servicio-icon material-symbols-outlined" aria-hidden="true">light_mode</span>
+          <h3>Blanqueamiento</h3>
+          <p class="servicio-descripcion">Tratamientos profesionales y/o ambulatorios que iluminan tu sonrisa de forma segura y controlada.</p>
+        </div>
+        <div class="servicio animate-on-scroll">
+          <span class="servicio-icon material-symbols-outlined" aria-hidden="true">health_and_safety</span>
+          <h3>Cirugías</h3>
+          <p class="servicio-descripcion">Procedimientos quirúrgicos con técnicas mínimamente invasivas y una recuperación confortable.</p>
+        </div>
+        <div class="servicio animate-on-scroll">
+          <span class="servicio-icon material-symbols-outlined" aria-hidden="true">dentistry</span>
+          <h3>Implantes</h3>
+          <p class="servicio-descripcion">Implantes de última generación que devuelven la función, la estética y la confianza al sonreír.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <section id="contacto" class="contact">
-    <div class="container">
+  <section id="contacto" class="contact animate-on-scroll">
+    <div class="container animate-on-scroll">
       <h2>Encontranos</h2>
-      <div class="map">
+      <div class="map animate-on-scroll">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.217664938975!2d-58.30965132493444!3d-34.73363847289909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32dc5be43b3d3%3A0x27b902292db17cd3!2sAg%C3%BCero%20Romero%20Odontolog%C3%ADa%20Integral!5e0!3m2!1ses!2sar!4v1695660000000!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
   </section>
 
-  <section id="opiniones" class="opiniones">
-    <div class="container">
+  <section id="opiniones" class="opiniones animate-on-scroll">
+    <div class="container animate-on-scroll">
       <h2>Opiniones de nuestros pacientes</h2>
-      <div class="opinion-cards">
-        <div class="opinion-card">
+      <div class="opinion-cards animate-on-scroll">
+        <div class="opinion-card animate-on-scroll">
           <img src="avatar1.jpg" alt="María G.">
           <p>"Excelente atención, muy profesionales. Estoy muy contento con el tratamiento que recibí."</p>
           <h4>- Gustavo M.</h4>
         </div>
-        <div class="opinion-card">
+        <div class="opinion-card animate-on-scroll">
           <img src="avatar2.jpg" alt="Juan P.">
           <p>"El mejor odontólogo que he visitado, atención de calidad y muy buen trato."</p>
           <h4>- Axel R.</h4>
         </div>
-        <div class="opinion-card">
+        <div class="opinion-card animate-on-scroll">
           <img src="avatar3.jpg" alt="Sofía L.">
           <p>"Ambiente agradable y tecnología de última generación. ¡Recomendado!"</p>
           <h4>- Andrea C.</h4>
@@ -107,8 +124,8 @@
     </div>
   </section>
 
-  <section id="instagram" class="instagram">
-    <div class="container">
+  <section id="instagram" class="instagram animate-on-scroll">
+    <div class="container animate-on-scroll">
       <h2>¡Síguenos en Instagram!</h2>
       <p>Descubre más sobre nuestro trabajo, casos reales y consejos para tu salud bucal.</p>
       <a href="https://www.instagram.com/p/DLD3wCdJGLw/?igsh=MWdxZ2YwYjF5aGdvNg==" target="_blank" class="btn">Visítanos en Instagram</a>

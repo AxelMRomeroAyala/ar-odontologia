@@ -307,3 +307,15 @@ footer {
   scroll-margin-top: 90px; /* Prueba con 120px o ajusta según el alto real del header */
 }
 
+/* Animación para elementos que aparecen al hacer scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(.22,1,.36,1);
+}
+
+.show-on-scroll {
+  opacity: 1;
+  transform: none;
+}
+
