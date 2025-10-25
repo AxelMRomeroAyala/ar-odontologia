@@ -68,7 +68,7 @@ header:hover {
 }
 
 .hero {
-  background: url('hero.jpg') center/cover no-repeat;
+  background: url('Header.jpg') center/cover no-repeat;
   background-attachment: fixed;
   height: 100vh;
   display: flex;
