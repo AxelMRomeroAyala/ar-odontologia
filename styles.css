@@ -26,6 +26,12 @@
   color: white;
 }
 
+/* Medios fluidos por defecto */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: #333;
@@ -317,5 +323,192 @@ footer {
 .show-on-scroll {
   opacity: 1;
   transform: none;
+}
+
+/* ============================= */
+/*        Responsive tweaks      */
+/* ============================= */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+  body {
+    padding-top: 72px;
+  }
+
+  header {
+    padding: 0.75rem 1rem;
+  }
+
+  .logo-container img {
+    height: 44px;
+  }
+
+  .logo-text {
+    font-size: 1.1rem;
+  }
+
+  .navbar {
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
+  }
+
+  .nav-links li a {
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+  }
+
+  .hero {
+    /* Evita parallax que da problemas en mobile */
+    background-attachment: scroll;
+    height: 85vh;
+  }
+
+  .hero-content {
+    padding: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  section {
+    padding: 3rem 1.25rem;
+  }
+
+  .about-content {
+    gap: 1.25rem;
+  }
+
+  .map iframe {
+    height: 35vh;
+    min-height: 240px;
+    max-height: 420px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  body {
+    padding-top: 0;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hero {
+    height: 72vh;
+  }
+
+  .hero h1 {
+    font-size: 1.85rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .about-img {
+    width: 100%;
+    max-width: none;
+  }
+
+  .servicios-grid {
+    gap: 1rem;
+  }
+
+  .servicio {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .instagram h2,
+  .opiniones h2,
+  .servicios h2,
+  .about h2,
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .whatsapp-button {
+    width: 52px;
+    height: 52px;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .whatsapp-button img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Teléfonos pequeños */
+@media (max-width: 480px) {
+  header {
+    padding: 0.6rem 0.9rem;
+  }
+
+  .logo-container img {
+    height: 38px;
+  }
+
+  .logo-text {
+    font-size: 1rem;
+  }
+
+  .hero {
+    height: 64vh;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    padding: 0.55rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 2.25rem 1rem;
+  }
+
+  .whatsapp-button {
+    width: 48px;
+    height: 48px;
+    bottom: 14px;
+    right: 14px;
+  }
+
+  .whatsapp-button img {
+    width: 24px;
+    height: 24px;
+  }
 }
 
